@@ -6,7 +6,7 @@ const { formattedDate, formattedTime } = formatDateTime(heroConfig.eventDate);
 
 function EventInfo() {
   return (
-    <section className="w-full flex flex-col items-center justify-center py-10 mt-20" style={{ background: COLORS.primary, opacity: 0.75 }}>
+    <section className="w-full flex flex-col items-center justify-center py-10 mt-20" style={{ background: COLORS.primary }}>
       <motion.div
         className="flex flex-col items-center justify-center bg-transparent rounded-xl px-2 py-4 max-w-md w-full"
         style={{ fontFamily: 'Montserrat, sans-serif' }}

@@ -40,7 +40,7 @@ function Countdown() {
             style={{
               fontFamily: "Montserrat, sans-serif",
               color: COLORS.white,
-              backgroundColor: COLORS.primary + '90',
+              backgroundColor: COLORS.primary ,
               minHeight: "85px",
               height: "auto"
             }}
