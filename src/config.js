@@ -41,6 +41,17 @@ export const dressCodeConfig = {
   icon: "/src/assets/dress-code.gif"
 };
 
+export const galleryConfig1 = {
+  images: [
+    "/src/assets/carrousel1.jpeg",
+    "/src/assets/carrousel2.jpeg",
+    "/src/assets/carrousel3.jpeg",
+    "/src/assets/carrousel4.jpeg",
+  ],
+  autoplayDelay: 4000,
+  caption: "HAY MOMENTOS QUE NO SE PUEDEN BORRAR, PERSONAS QUE NO SE PUEDEN OLVIDAR Y RECUERDOS COMO ESTOS QUE SIEMPRE VOY A ATESORAR"
+};
+
 export function formatDateTime(dateString) {
   const date = new Date(dateString);
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };

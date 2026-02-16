@@ -5,6 +5,7 @@ import EventInfo from './components/EventInfo'
 import MusicButton from './components/MusicButton'
 import Location from './components/Location'
 import DressCode from './components/DressCode'
+import Gallery from './components/Gallery'
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <MusicButton />
       <Location />
       <DressCode />
+      <Gallery />
     </>
   )
 }
