@@ -8,6 +8,9 @@ import DressCode from './components/DressCode'
 import Gallery from './components/Gallery'
 import Gift from './components/Gift'
 import RSVP from './components/Confirm'
+import SongRequest from './components/SongRequest'
+import ClosingImageSection from './components/ClosingImageSection'
+import Footer from './components/Footer'
 import { galleryConfig1, galleryConfig2 } from './config'
 import './App.css'
 
@@ -29,6 +32,9 @@ function App() {
       <Gift />
       <Gallery galleryConfig={galleryConfig2} />
       <RSVP />
+      <SongRequest />
+      <ClosingImageSection />
+      <Footer />
     </>
   )
 }

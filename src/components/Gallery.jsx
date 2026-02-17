@@ -24,7 +24,7 @@ function Gallery({ galleryConfig }) {
               <img
                 src={img}
                 alt="Galería"
-                className="w-full h-[620px] lg:h-[720px] object-cover select-none shadow-md"
+                className="w-full h-[620px] md:h-[720px] lg:h-[720px] object-cover select-none shadow-md"
                 style={{ minHeight: 0, minWidth: 0, maxHeight: '720px' }}
                 draggable={false}
               />
