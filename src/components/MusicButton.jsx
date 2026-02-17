@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play, Pause } from "lucide-react";
-import song from "../assets/song-2.mp3";
+import song from "../assets/song.mp3";
 import { COLORS } from "../config";
 
 function MusicButton() {

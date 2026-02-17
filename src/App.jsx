@@ -6,6 +6,9 @@ import MusicButton from './components/MusicButton'
 import Location from './components/Location'
 import DressCode from './components/DressCode'
 import Gallery from './components/Gallery'
+import Gift from './components/Gift'
+import RSVP from './components/Confirm'
+import { galleryConfig1, galleryConfig2 } from './config'
 import './App.css'
 
 function App() {
@@ -22,7 +25,10 @@ function App() {
       <MusicButton />
       <Location />
       <DressCode />
-      <Gallery />
+      <Gallery galleryConfig={galleryConfig1} />
+      <Gift />
+      <Gallery galleryConfig={galleryConfig2} />
+      <RSVP />
     </>
   )
 }
