@@ -71,7 +71,7 @@ function SongRequest() {
   const handleSubmit = () => {
     if (!song.trim()) return;
     const message = encodeURIComponent(
-      `Hola! Quiero sugerir esta cancion para la fiesta: ${song.trim()}`
+      songConfig.messagePrefix + song.trim()
     );
     window.open(
       `https://wa.me/${songConfig.whatsappNumber}?text=${message}`,
@@ -97,15 +97,12 @@ function SongRequest() {
       >
         <MusicNoteIcon />
       </motion.div>
-      {/* Title */}
       <h3 className="text-xl sm:text-2xl font-normal tracking-widest text-center uppercase" style={{ color: COLORS.primary }}>
         {songConfig.title}
       </h3>
-      {/* Description */}
       <p className="text-center text-sm sm:text-lg font-light uppercase mb-10 mt-2 max-w-lg" style={{ color: COLORS.primary, opacity: 0.7 }}>
         {songConfig.description}
       </p>
-      {/* Input */}
       <div className="w-full max-w-xs mb-8">
         <input
           type="text"
@@ -119,7 +116,6 @@ function SongRequest() {
           style={{ borderColor: COLORS.primary, color: COLORS.primary, borderRadius: 0, borderBottomWidth: 2 }}
         />
       </div>
-      {/* Submit button */}
       <motion.button
         className="px-8 py-3 text-[13px] font-semibold uppercase tracking-[0.18em] text-[--primary] focus:outline-none text-center"
         style={{ color: COLORS.white, borderRadius: 0, fontFamily: 'Montserrat, sans-serif', background: COLORS.primary, border: `1px solid ${COLORS.primary}80` }}

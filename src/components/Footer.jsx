@@ -18,12 +18,6 @@ function Footer() {
         >
           {footerConfig.byText}
         </span>
-        {/* <span
-          className="text-base mb-1 text-center uppercase"
-          style={{ color: COLORS.white, fontFamily: 'Montserrat, sans-serif' }}
-        >
-          {footerConfig.name}
-        </span> */}
         <div className="flex flex-row gap-5 mt-1">
           <a
             href={footerConfig.linkedin}

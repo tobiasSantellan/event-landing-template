@@ -1,8 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play, Pause } from "lucide-react";
-import song from "../assets/song.mp3";
-import { COLORS } from "../config";
+import { COLORS, musicConfig } from "../config";
 
 function MusicButton() {
   const audioRef = useRef(null);
@@ -30,7 +29,22 @@ function MusicButton() {
 
   return (
     <>
-      <audio ref={audioRef} src={song} preload="auto" />
+      <audio
+        ref={audioRef}
+        src={musicConfig.song}
+        preload="auto"
+        loop
+        onEnded={() => {
+          setIsPlaying(false);
+          setTimeout(() => {
+            if (audioRef.current) {
+              audioRef.current.currentTime = 0;
+              audioRef.current.play();
+              setIsPlaying(true);
+            }
+          }, 100);
+        }}
+      />
       <motion.button
         className="fixed bottom-[.6rem] sm:bottom-[.5rem] right-5 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-lg flex items-center justify-center focus:outline-none"
         style={{ background: COLORS.primary + '30' }}

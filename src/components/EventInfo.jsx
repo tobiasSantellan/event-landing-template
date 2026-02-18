@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { heroConfig, COLORS, formatDateTime, eventInfoConfig } from "../config";
-import calendarGif from "../assets/calendar.gif";
 
 const { formattedDate, formattedTime } = formatDateTime(heroConfig.eventDate);
 
@@ -17,7 +16,7 @@ function EventInfo() {
       >
         <div className="flex flex-col items-center gap-2 mb-4">
           <motion.img
-            src={calendarGif}
+            src={eventInfoConfig.icon}
             alt="Calendario"
             className="mx-auto"
             style={{ width: 82, height: 82 }}

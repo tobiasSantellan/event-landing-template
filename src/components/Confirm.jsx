@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { rsvpConfig, COLORS } from "../config";
 
 function RSVP() {
-  // Generar URL de WhatsApp
   const whatsappUrl = `https://wa.me/${rsvpConfig.phone}?text=${encodeURIComponent(rsvpConfig.message)}`;
 
   return (

@@ -1,68 +1,6 @@
 import { motion } from "framer-motion";
 import { closingConfig, COLORS } from "../config";
 
-function CrownIcon() {
-  return (
-    <svg
-      width="82"
-      height="82"
-      viewBox="0 0 64 64"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      className="mb-4"
-    >
-      {/* Base de la corona */}
-      <motion.path
-        d="M12 42 L18 26 L32 36 L46 26 L52 42 Z"
-        stroke={COLORS.primary}
-        strokeWidth="1.5"
-        fill="none"
-        initial={{ pathLength: 0, opacity: 0 }}
-        animate={{ pathLength: 1, opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-      />
-      {/* Línea inferior */}
-      <motion.line
-        x1="12"
-        y1="42"
-        x2="52"
-        y2="42"
-        stroke={COLORS.primary}
-        strokeWidth="1.5"
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-        style={{ transformOrigin: "center" }}
-      />
-      {/* Brillos animados */}
-      <motion.circle
-        cx="18"
-        cy="22"
-        r="1"
-        fill={COLORS.primary}
-        animate={{ opacity: [0, 1, 0], scale: [0.8, 1.4, 0.8] }}
-        transition={{ duration: 2, repeat: Infinity, delay: 0.2 }}
-      />
-      <motion.circle
-        cx="32"
-        cy="16"
-        r="1.2"
-        fill={COLORS.primary}
-        animate={{ opacity: [0, 1, 0], scale: [0.8, 1.5, 0.8] }}
-        transition={{ duration: 2.2, repeat: Infinity, delay: 0.8 }}
-      />
-      <motion.circle
-        cx="46"
-        cy="22"
-        r="1"
-        fill={COLORS.primary}
-        animate={{ opacity: [0, 1, 0], scale: [0.8, 1.4, 0.8] }}
-        transition={{ duration: 2.4, repeat: Infinity, delay: 1.4 }}
-      />
-    </svg>
-  );
-}
 
 function HeartIcon() {
   return (

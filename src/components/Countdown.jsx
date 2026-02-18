@@ -31,8 +31,8 @@ function Countdown() {
   }, []);
 
   return (
-    <section className="w-full flex flex-col items-center justify-center py-0 relative z-999">
-      <div className="grid grid-cols-4 gap-2 sm:gap-4 w-full max-w-2xl mx-auto">
+    <section className="w-full flex flex-col items-center justify-center py-0 relative z-999 mt-4 px-2">
+      <div className="grid grid-cols-4 gap-[0.2px] sm:gap-4 w-full max-w-2xl mx-auto">
         {LABELS.map(({ key, label }, idx) => (
           <motion.div
             key={key}
@@ -40,9 +40,13 @@ function Countdown() {
             style={{
               fontFamily: "Montserrat, sans-serif",
               color: COLORS.white,
-              backgroundColor: COLORS.primary ,
+              backgroundColor: COLORS.primary,
               minHeight: "85px",
-              height: "auto"
+              height: "auto",
+              maxWidth: window.innerWidth < 640 ? '84px' : undefined,
+              margin: '0 auto',
+              ...(window.innerWidth >= 768 && { minHeight: "110px" }), // md (iPad)
+              ...(window.innerWidth >= 1024 && { minHeight: "130px" }), // lg (desktop)
             }}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}

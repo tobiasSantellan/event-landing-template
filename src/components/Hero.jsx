@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import heroImg from "../assets/hero.jpeg";
 import { heroConfig, COLORS } from "../config";
 import Countdown from "./Countdown";
+
+const heroImg = heroConfig.image;
 
 function Hero() {
   const { title, name } = heroConfig.hero;
@@ -41,9 +42,10 @@ function Hero() {
         </div>
        
       </section>
-      <div className="absolute left-1/2 bottom-0 -translate-x-1/2 z-9999 w-[calc(100%-32px)] max-w-[360px] sm:max-w-2xl px-2 sm:px-4 pb-60" style={{transform: 'translate(-50%, 20%)'}}>
-          <Countdown />
-        </div>
+      {/* Countdown debajo del Hero, sin absolute */}
+      <div className="w-full flex flex-col items-center justify-center -mt-16 sm:-mt-20 md:-mt-24 z-20">
+        <Countdown />
+      </div>
        
     </>
   );
