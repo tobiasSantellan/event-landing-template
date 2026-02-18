@@ -12,9 +12,6 @@ dist
 dist-ssr
 *.local
 
-# Ignorar carpeta de assets y config.js
-src/assets/
-src/config.js
 
 # Editor directories and files
 .vscode/*
