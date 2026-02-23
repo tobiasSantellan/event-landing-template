@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { rsvpConfig, COLORS } from "../config";
 
 function RSVP() {
-  const whatsappUrl = `https://wa.me/${rsvpConfig.phone}?text=${encodeURIComponent(rsvpConfig.message)}`;
-
   return (
     <motion.section
       className="w-full flex flex-col items-center justify-center py-16 px-4"
@@ -34,7 +32,7 @@ function RSVP() {
         {rsvpConfig.description}
       </p>
       <a
-        href={whatsappUrl}
+        href={rsvpConfig.googleFormUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="px-8 py-3 text-[13px] font-semibold uppercase tracking-[0.18em] bg-white text-[--primary] hover:bg-white/90 transition-colors duration-200 focus:outline-none text-center"

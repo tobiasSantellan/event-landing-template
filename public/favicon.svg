@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#1f22c9"/>
+  <text 
+    x="50%" 
+    y="50%" 
+    dominant-baseline="middle"
+    text-anchor="middle" 
+    fill="#ffffff" 
+    font-size="30"
+    font-family="Montserrat, sans-serif"
+    font-weight="600"
+    letter-spacing="2"
+  >
+    15
+  </text>
+</svg>

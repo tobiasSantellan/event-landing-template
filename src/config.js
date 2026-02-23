@@ -85,7 +85,8 @@ export const rsvpConfig = {
   description: "ANTES DEL 20 DE MARZO",
   buttonText: "voy a asistir",
   phone: "+5491128637307",
-  message: "¡Hola! Confirmo mi asistencia a los 15!"
+  message: "¡Hola! Confirmo mi asistencia a los 15!",
+  googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeYfzevL2MuMluzzh7P7H9SOydGw0Q8L6gMc9rh9Ehwfcy95A/viewform?usp=publish-editor"
 };
 
 export const songConfig = {
