@@ -32,7 +32,8 @@ export const locationConfig = {
   venueAddress: "Av. Siempre Viva 1234, Buenos Aires",
   mapsUrl: "https://www.google.com/maps/place/La+Ni%C3%B1a+1015-1150,+B1663ANW+San+Miguel,+Provincia+de+Buenos+Aires/@-34.5798785,-58.7428834,812m/data=!3m1!1e3!4m6!3m5!1s0x95bc9621f4719e89:0xb24919e94c9db890!8m2!3d-34.5798785!4d-58.7428834!16s%2Fg%2F11rp49m6j9?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D",
   ctaText: "CÓMO LLEGAR",
-  sectionTitle: "¿DÓNDE?"
+  sectionTitle: "¿DÓNDE?",
+  icon: "https://latarjetadigital.com.ar/wp-content/uploads/2024/11/c7757f-rosa-salmon-1.gif"
 };
 
 export const dressCodeConfig = {

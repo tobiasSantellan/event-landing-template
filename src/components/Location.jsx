@@ -34,8 +34,19 @@ function LocationIcon({ size = 52, color = COLORS.primary }) {
 }
 
 function Location() {
-  // state to track if the GIF failed to load, so we can show a fallback icon
   const [gifError, setGifError] = useState(false);
+   const safari = typeof window !== "undefined" && isSafari();
+
+  function isSafari() {
+    if (typeof navigator === "undefined") return false;
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  }
+
+
+  const filterStyle = safari
+    ? { filter: "brightness(0) saturate(100%) invert(10%) sepia(98%) saturate(7426%) hue-rotate(245deg) brightness(93%) contrast(143%)" } // Safari/iOS
+    : { filter: "brightness(0) saturate(100%) invert(10%) sepia(98%) saturate(7426%) hue-rotate(245deg) brightness(93%) contrast(143%)" }; // Chrome/Android
+
 
   return (
     <section className="w-full flex flex-col items-center justify-center py-10 px-4" style={{ background: COLORS.background }}>
@@ -49,11 +60,11 @@ function Location() {
       >
         {!gifError ? (
           <img
-            src="https://latarjetadigital.com.ar/wp-content/uploads/2024/11/c7757f-rosa-salmon-1.gif"
+            src={locationConfig.icon}
             width={70}
             height={70}
             className="mb-2 mx-auto opacity-90"
-            style={{ filter: "invert(16%) sepia(95%) saturate(4000%) hue-rotate(225deg)" }}
+            style={filterStyle}
             alt="Animated location"
             onError={() => setGifError(true)}
           />
