@@ -34,18 +34,8 @@ function LocationIcon({ size = 52, color = COLORS.primary }) {
 }
 
 function Location() {
+  // state to track if the GIF failed to load, so we can show a fallback icon
   const [gifError, setGifError] = useState(false);
-   const safari = typeof window !== "undefined" && isSafari();
-
-  function isSafari() {
-    if (typeof navigator === "undefined") return false;
-    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-  }
-
-
-  const filterStyle = safari
-    ? { filter: "brightness(0) saturate(100%) invert(10%) sepia(98%) saturate(7426%) hue-rotate(245deg) brightness(93%) contrast(143%)" } // Safari/iOS
-    : { filter: "brightness(0) saturate(100%) invert(10%) sepia(98%) saturate(7426%) hue-rotate(245deg) brightness(93%) contrast(143%)" }; // Chrome/Android
 
 
   return (
@@ -59,14 +49,15 @@ function Location() {
         transition={{ duration: 0.7, delay: 0.1 }}
       >
         {!gifError ? (
-          <img
+          <motion.img
             src={locationConfig.icon}
-            width={70}
-            height={70}
+            style={{ width: 82, height: 82 }}
             className="mb-2 mx-auto opacity-90"
-            style={filterStyle}
             alt="Animated location"
             onError={() => setGifError(true)}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
           />
         ) : (
           <LocationIcon size={70} />
