@@ -39,7 +39,7 @@ export const dressCodeConfig = {
   title: "DRESS CODE",
   dressType: "ELEGANTE",
   noteLine1: "El color AZUL se reserva",
-  noteLine2: "PARA LA QUINCEAÑERA",
+  noteLine2: "Y NO PODRÁ UTILIZARSE",
   icon: "/src/assets/dress-code.gif"
 };
 

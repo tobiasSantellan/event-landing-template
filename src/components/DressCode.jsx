@@ -27,7 +27,7 @@ function DressCode() {
         </div>
         <div className="text-center text-base sm:text-lg text-white leading-snug mt-2 uppercase">
           <div>
-            EL COLOR <span className="font-semibold">AZUL</span> SE RESERVA
+            EL COLOR <span className="font-semibold">AZUL</span> ESTÁ EXCLUSIVAMENTE RESERVADO
           </div>
           <div>{dressCodeConfig.noteLine2}</div>
         </div>
