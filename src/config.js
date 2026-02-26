@@ -19,12 +19,12 @@ export const heroConfig = {
     subtitle: "¡Te espero para celebrar juntos!"
   },
   eventDate: "2026-04-02T21:00:00-03:00",
-  image: "/src/assets/hero.jpeg"
+  image: "/assets/hero.jpeg"
 };
 
 export const eventInfoConfig = {
   sectionTitle: "¿CUÁNDO?",
-  icon: "/src/assets/calendar.gif"
+  icon: "/assets/calendar.gif"
 };
 
 export const locationConfig = {
@@ -40,15 +40,15 @@ export const dressCodeConfig = {
   dressType: "ELEGANTE",
   noteLine1: "El color AZUL se reserva",
   noteLine2: "Y NO PODRÁ UTILIZARSE",
-  icon: "/src/assets/dress-code.gif"
+  icon: "/assets/dress-code.gif"
 };
 
 export const galleryConfig1 = {
   images: [
-    "/src/assets/carrousel1.jpeg",
-    "/src/assets/carrousel2.jpeg",
-    "/src/assets/carrousel3.jpeg",
-    "/src/assets/carrousel4.jpeg",
+    "/assets/carrousel1.jpeg",
+    "/assets/carrousel2.jpeg",
+    "/assets/carrousel3.jpeg",
+    "/assets/carrousel4.jpeg",
   ],
   autoplayDelay: 4000,
   caption: "HAY MOMENTOS QUE NO SE PUEDEN BORRAR, PERSONAS QUE NO SE PUEDEN OLVIDAR Y RECUERDOS COMO ESTOS QUE SIEMPRE VOY A ATESORAR"
@@ -56,10 +56,10 @@ export const galleryConfig1 = {
 
 export const galleryConfig2 = {
   images: [
-    "/src/assets/carrousel5.jpeg",
-    "/src/assets/carrousel6.jpeg",
-    "/src/assets/carrousel7.jpeg",
-    "/src/assets/carrousel8.jpeg",
+    "/assets/carrousel5.jpeg",
+    "/assets/carrousel6.jpeg",
+    "/assets/carrousel7.jpeg",
+    "/assets/carrousel8.jpeg",
   ],
   autoplayDelay: 4000,
   caption: "NUEVOS RECUERDOS, NUEVAS AVENTURAS Y MOMENTOS QUE QUEDARÁN PARA SIEMPRE EN MI CORAZÓN"
@@ -69,7 +69,7 @@ export const giftConfig = {
   title: "REGALO",
   description: "NADA ES MÁS IMPORTANTE QUE TU PRESENCIA, PERO SI DESEAS HACERME UN REGALO SERÁ RECIBIDO CON MUCHO AMOR, TAMBIÉN PODÉS HACERLO EN LA SIGUIENTE CUENTA",
   buttonText: "VER CUENTA",
-  icon: "/src/assets/gift.gif",
+  icon: "/assets/gift.gif",
   account: {  
     holder: "Martina Duarte",
     alias: "mmartinaduarte",  
@@ -80,7 +80,7 @@ export const giftConfig = {
 };
 
 export const rsvpConfig = {
-  icon: "/src/assets/attendance.gif",
+  icon: "/assets/attendance.gif",
   title: "Confirmar asistencia",
   description: "ANTES DEL 20 DE MARZO",
   buttonText: "voy a asistir",
@@ -99,11 +99,11 @@ export const songConfig = {
 };
 
 export const musicConfig = {
-  song: "/src/assets/song.mp3"
+  song: "/assets/song.mp3"
 };
 
 export const closingConfig = {
-  image: "/src/assets/static.jpeg",
+  image: "/assets/static.jpeg",
   text: "TE ESPERO",
   name: "Martina",
 };
